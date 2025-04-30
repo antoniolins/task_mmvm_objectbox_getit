@@ -1,0 +1,30 @@
+name: task_mvvm_objectbox_getit
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get_it: ^7.6.7
+  objectbox: ^4.2.0
+  objectbox_generator: ^4.2.0
+  objectbox_flutter_libs: ^4.2.0
+  build_runner: ^2.4.11
+  path: ^1.9.1
+  path_provider: ^2.1.1
+
+objectbox:
+  output_dir: 
+    lib: app/data
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

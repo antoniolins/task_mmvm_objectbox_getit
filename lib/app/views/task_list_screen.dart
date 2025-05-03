@@ -31,9 +31,9 @@ class TaskListPage extends StatelessWidget {
                       ),
                       IconButton(
                         icon: const Icon(Icons.edit),
-                    onPressed: () async => await showDialog(
-                      context: context,
-                      builder: (context) => EditTaskDialog(viewModel: viewModel, task: task),
+                        onPressed: () async => await showDialog(
+                        context: context,
+                        builder: (context) => EditTaskDialog(viewModel: viewModel, task: task),
                     ),
                       ),
                       IconButton(
@@ -49,11 +49,11 @@ class TaskListPage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
         onPressed: () async => await showDialog(
           context: context,
           builder: (context) => AddTaskDialog(viewModel: viewModel),
-        ),
-         child: const Icon(Icons.add),
+        ),  
       ),
     );
   }

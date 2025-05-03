@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'app/app_widget.dart';
-import 'app/data/objectbox.dart';
+import 'app/data/services/objectbox/objectbox.dart';
 import 'app/core/service_locator.dart';
 
 late ObjectBox objectbox;

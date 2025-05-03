@@ -1,5 +1,5 @@
 import 'package:get_it/get_it.dart';
-import '../data/objectbox.dart';
+import '../data/services/objectbox/objectbox.dart';
 import '../data/repositories/task_repository_impl.dart';
 import '../viewmodels/task_viewmodel.dart';
 

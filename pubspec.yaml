@@ -19,7 +19,7 @@ dependencies:
 
 objectbox:
   output_dir: 
-    lib: app/data
+    lib: app/data/services/objectbox
 
 dev_dependencies:
   flutter_test:

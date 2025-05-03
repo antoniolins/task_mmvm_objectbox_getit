@@ -1,6 +1,6 @@
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
-import 'package:task_mvvm_objectbox_getit/app/data/objectbox.g.dart';
+import 'package:task_mvvm_objectbox_getit/app/data/services/objectbox/objectbox.g.dart';
 import 'package:task_mvvm_objectbox_getit/app/models/task_model.dart';
 
 class ObjectBox {

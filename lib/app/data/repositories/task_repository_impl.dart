@@ -1,4 +1,4 @@
-import 'package:task_mvvm_objectbox_getit/app/data/objectbox.dart';
+import 'package:task_mvvm_objectbox_getit/app/data/services/objectbox/objectbox.dart';
 import 'package:task_mvvm_objectbox_getit/app/data/repositories/task_repository.dart';
 import 'package:task_mvvm_objectbox_getit/app/models/task_model.dart';
 

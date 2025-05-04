@@ -20,31 +20,31 @@ export 'package:objectbox/objectbox.dart'; // so that callers only have to impor
 
 final _entities = <obx_int.ModelEntity>[
   obx_int.ModelEntity(
-    id: const obx_int.IdUid(1, 3014979968277696088),
+    id: const obx_int.IdUid(1, 1591294324037301092),
     name: 'TaskModel',
-    lastPropertyId: const obx_int.IdUid(4, 5899701174456313235),
+    lastPropertyId: const obx_int.IdUid(4, 3689669964374635203),
     flags: 0,
     properties: <obx_int.ModelProperty>[
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(1, 142354452401817082),
+        id: const obx_int.IdUid(1, 388950985475285999),
         name: 'id',
         type: 6,
-        flags: 129,
+        flags: 1,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(2, 8367626832893655077),
+        id: const obx_int.IdUid(2, 2753367054795159265),
         name: 'title',
         type: 9,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(3, 633815274445209367),
+        id: const obx_int.IdUid(3, 823976494708560041),
         name: 'description',
         type: 9,
         flags: 0,
       ),
       obx_int.ModelProperty(
-        id: const obx_int.IdUid(4, 5899701174456313235),
+        id: const obx_int.IdUid(4, 3689669964374635203),
         name: 'isCompleted',
         type: 1,
         flags: 0,
@@ -93,7 +93,7 @@ Future<obx.Store> openStore({
 obx_int.ModelDefinition getObjectBoxModel() {
   final model = obx_int.ModelInfo(
     entities: _entities,
-    lastEntityId: const obx_int.IdUid(1, 3014979968277696088),
+    lastEntityId: const obx_int.IdUid(1, 1591294324037301092),
     lastIndexId: const obx_int.IdUid(0, 0),
     lastRelationId: const obx_int.IdUid(0, 0),
     lastSequenceId: const obx_int.IdUid(0, 0),
@@ -135,12 +135,6 @@ obx_int.ModelDefinition getObjectBoxModel() {
         final descriptionParam = const fb.StringReader(
           asciiOptimization: true,
         ).vTableGet(buffer, rootOffset, 8, '');
-        final idParam = const fb.Int64Reader().vTableGet(
-          buffer,
-          rootOffset,
-          4,
-          0,
-        );
         final isCompletedParam = const fb.BoolReader().vTableGet(
           buffer,
           rootOffset,
@@ -150,9 +144,8 @@ obx_int.ModelDefinition getObjectBoxModel() {
         final object = TaskModel(
           titleParam,
           descriptionParam,
-          id: idParam,
           isCompleted: isCompletedParam,
-        );
+        )..id = const fb.Int64Reader().vTableGet(buffer, rootOffset, 4, 0);
 
         return object;
       },

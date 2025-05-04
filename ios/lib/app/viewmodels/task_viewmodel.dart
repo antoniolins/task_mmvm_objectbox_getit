@@ -21,6 +21,7 @@ class TaskViewModel extends ChangeNotifier {
   Future<void> addTask(String title, String description) async {
     await _taskRepository.createTask(title, description);
     await loadTasks();
+   // loadTasks();
   }
 
   Future<void> updateTask(TaskModel task) async {

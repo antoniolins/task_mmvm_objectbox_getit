@@ -19,7 +19,7 @@ dependencies:
 
 objectbox:
   output_dir: 
-    lib: app/data/services/objectbox
+    lib: app/data/services/local_service_db
 
 dev_dependencies:
   flutter_test:

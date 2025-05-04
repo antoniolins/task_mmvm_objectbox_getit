@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:task_mvvm_objectbox_getit/app/views/add_task_widget.dart';
-import 'package:task_mvvm_objectbox_getit/app/views/edit_task_widget.dart';
+import 'add_task_widget.dart';
+import 'edit_task_widget.dart';
 import '../viewmodels/task_viewmodel.dart';
 
 class TaskListPage extends StatelessWidget {

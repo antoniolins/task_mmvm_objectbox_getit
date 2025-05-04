@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
+import 'package:task_mvvm_objectbox_getit/app/models/task_model.dart';
 import '../data/repositories/task_repository.dart';
-import '../models/task_model.dart';
+
 
 class TaskViewModel extends ChangeNotifier {
   final TaskRepository _taskRepository;

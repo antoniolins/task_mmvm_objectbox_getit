@@ -2,9 +2,9 @@ import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:task_mvvm_objectbox_getit/app/data/services/local_service_db/objectbox.g.dart' show openStore;
 
-import '../../../models/task_model.dart';
  
 import 'package:objectbox/objectbox.dart';
+import 'package:task_mvvm_objectbox_getit/app/models/task_model.dart' show TaskModel;
 
 class LocalTaskServiceDB {
   late final Store store;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/task_model.dart';
+import 'package:task_mvvm_objectbox_getit/app/models/task_model.dart';
 import '../viewmodels/task_viewmodel.dart';
 
 class EditTaskDialog extends StatelessWidget {
